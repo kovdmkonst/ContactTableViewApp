@@ -12,7 +12,6 @@
 		511738E427ED4ADD006EAAB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511738E227ED4ADD006EAAB2 /* Main.storyboard */; };
 		511738E627ED4AE1006EAAB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511738E527ED4AE1006EAAB2 /* Assets.xcassets */; };
 		511738E927ED4AE1006EAAB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511738E727ED4AE1006EAAB2 /* LaunchScreen.storyboard */; };
-		5117390E27ED4B91006EAAB2 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117390D27ED4B91006EAAB2 /* ContactManager.swift */; };
 		5117391027ED4BA7006EAAB2 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117390F27ED4BA7006EAAB2 /* ContactModel.swift */; };
 		5117391527ED4EAE006EAAB2 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117391427ED4EAE006EAAB2 /* ContactsTableViewController.swift */; };
 		5117391727ED4EC6006EAAB2 /* SortedContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117391627ED4EC6006EAAB2 /* SortedContactsTableViewController.swift */; };
@@ -46,7 +45,6 @@
 		511738EA27ED4AE1006EAAB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		511738EF27ED4AE1006EAAB2 /* ContactTableViewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactTableViewAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		511738F927ED4AE1006EAAB2 /* ContactTableViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactTableViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5117390D27ED4B91006EAAB2 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
 		5117390F27ED4BA7006EAAB2 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		5117391427ED4EAE006EAAB2 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		5117391627ED4EC6006EAAB2 /* SortedContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedContactsTableViewController.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				5117390F27ED4BA7006EAAB2 /* ContactModel.swift */,
-				5117390D27ED4B91006EAAB2 /* ContactManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,7 +277,6 @@
 				511738DD27ED4ADD006EAAB2 /* AppDelegate.swift in Sources */,
 				5117391527ED4EAE006EAAB2 /* ContactsTableViewController.swift in Sources */,
 				5117391727ED4EC6006EAAB2 /* SortedContactsTableViewController.swift in Sources */,
-				5117390E27ED4B91006EAAB2 /* ContactManager.swift in Sources */,
 				5117391927ED540C006EAAB2 /* DetailsViewController.swift in Sources */,
 				5117391027ED4BA7006EAAB2 /* ContactModel.swift in Sources */,
 				511738DF27ED4ADD006EAAB2 /* SceneDelegate.swift in Sources */,

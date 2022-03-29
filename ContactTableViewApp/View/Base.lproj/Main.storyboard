@@ -130,10 +130,51 @@
                     <view key="view" contentMode="scaleToFill" id="RIi-qA-4oo" customClass="deta">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-Lx-GRz">
+                                <rect key="frame" x="123" y="346" width="168.5" height="204"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACR-T3-Xh1">
+                                        <rect key="frame" x="0.0" y="0.0" width="75.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-Vx-ktE">
+                                        <rect key="frame" x="0.0" y="58" width="102.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coF-xt-AmV">
+                                        <rect key="frame" x="0.0" y="116" width="168.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5d-27-NEk">
+                                        <rect key="frame" x="0.0" y="174" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0cW-2Y-em4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jI0-Lx-GRz" firstAttribute="centerY" secondItem="RIi-qA-4oo" secondAttribute="centerY" id="7VI-VU-TvE"/>
+                            <constraint firstItem="jI0-Lx-GRz" firstAttribute="centerX" secondItem="RIi-qA-4oo" secondAttribute="centerX" id="QRP-7n-7Ia"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iYR-Nb-84x"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="x5d-27-NEk" id="e0e-oY-3Dg"/>
+                        <outlet property="nameLabel" destination="ACR-T3-Xh1" id="XoG-xN-UdI"/>
+                        <outlet property="phoneNumberLabel" destination="coF-xt-AmV" id="9XN-WY-eUj"/>
+                        <outlet property="surnameLabel" destination="NP8-Vx-ktE" id="O5s-Ts-8Ql"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Edh-0I-z9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

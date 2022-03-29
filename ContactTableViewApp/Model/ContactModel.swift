@@ -11,14 +11,14 @@ struct Person {
     var name: String!
     var surname: String!
     var email: String!
-    var callNumber: String!
+    var phoneNumber: String!
     var fullname: String { "\(surname ?? "") \(name ?? "")" }
 
     static func getRandomPerson() -> [Person] {
         let randomNames = nameArray.shuffled()
         let randomSurnames = surnameArray.shuffled()
         let randomEmails = emailArray.shuffled()
-        let randomCallNumber = callNumberArray.shuffled()
+        let randomPhoneNumber = phoneNumberArray.shuffled()
         var personArray: [Person] = []
         var customIndex = 0
         
@@ -26,7 +26,7 @@ struct Person {
             personArray.append(Person(name: randomNames[customIndex],
                                       surname: randomSurnames[customIndex],
                                       email: randomEmails[customIndex],
-                                      callNumber: randomCallNumber[customIndex])
+                                      phoneNumber: randomPhoneNumber[customIndex])
             )
             customIndex += 1
         } while  customIndex < randomNames.count
@@ -75,7 +75,7 @@ extension Person {
         "ijnbhu@mail.com",
     ]
     
-    static let callNumberArray = [
+    static let phoneNumberArray = [
         "8-800-123-456",
         "8-800-234-567",
         "8-800-345-678",

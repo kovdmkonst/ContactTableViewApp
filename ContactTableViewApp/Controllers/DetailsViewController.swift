@@ -9,10 +9,19 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var phoneNumberLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+
+     var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameLabel.text = "Name: \(person.name ?? "")"
+        surnameLabel.text = "Surname: \(person.surname ?? "")"
+        phoneNumberLabel.text = "Phone number: \(person.phoneNumber ?? "")"
+        emailLabel.text = "Email: \(person.email ?? "")"
     }
     
 
