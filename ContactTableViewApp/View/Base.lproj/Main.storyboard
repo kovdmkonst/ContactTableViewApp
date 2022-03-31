@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QMo-lN-H5D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HQe-qn-TCk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,57 +8,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contacts-->
-        <scene sceneID="fKb-kQ-zOb">
+        <!--Navigation Controller-->
+        <scene sceneID="90p-7h-TU9">
             <objects>
-                <navigationController title="Contacts" id="woY-aP-81K" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1ai-CW-RqE"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Aqx-AL-kMA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                <navigationController id="HQe-qn-TCk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uy4-D0-exd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="8Nc-MA-2Fy" kind="relationship" relationship="rootViewController" id="N82-58-Yk4"/>
+                        <segue destination="QMo-lN-H5D" kind="relationship" relationship="rootViewController" id="4Xo-b9-KFC"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B9x-1J-jg0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NV6-hm-IEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="-479"/>
+            <point key="canvasLocation" x="-1339" y="-168"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="qLY-S8-1MU">
             <objects>
-                <tabBarController id="QMo-lN-H5D" sceneMemberID="viewController">
+                <tabBarController id="QMo-lN-H5D" customClass="TabBarViewController" customModule="ContactTableViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="u3V-6x-4yn"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XQf-SD-sgF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="woY-aP-81K" kind="relationship" relationship="viewControllers" id="KOd-bI-n5E"/>
-                        <segue destination="RW5-yd-eGU" kind="relationship" relationship="viewControllers" id="pfU-Ln-uV6"/>
+                        <segue destination="8Nc-MA-2Fy" kind="relationship" relationship="viewControllers" id="XZa-Sx-MZR"/>
+                        <segue destination="279-zg-Epo" kind="relationship" relationship="viewControllers" id="GZd-ek-6Do"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsj-4v-tVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1222" y="-165"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="vse-8y-r38">
-            <objects>
-                <navigationController id="RW5-yd-eGU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Rfc-rH-G9r"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WqE-mK-6Zw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="279-zg-Epo" kind="relationship" relationship="rootViewController" id="Rau-oi-9Re"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pJZ-QK-eMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-317" y="183"/>
+            <point key="canvasLocation" x="-499" y="-151"/>
         </scene>
         <!--Sorted Contacts-->
         <scene sceneID="5Hg-jX-PUO">
@@ -69,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sotredContact" id="QLl-Te-RAU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sotredContacts" id="QLl-Te-RAU">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QLl-Te-RAU" id="vPl-uA-rtD">
@@ -107,7 +90,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zK9-B9-JAi" kind="show" id="7v3-dk-fit"/>
+                                    <segue destination="zK9-B9-JAi" kind="show" id="xJR-ZV-Kdj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

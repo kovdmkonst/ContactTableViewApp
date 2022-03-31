@@ -18,10 +18,10 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = "Name: \(person.name ?? "")"
-        surnameLabel.text = "Surname: \(person.surname ?? "")"
-        phoneNumberLabel.text = "Phone number: \(person.phoneNumber ?? "")"
-        emailLabel.text = "Email: \(person.email ?? "")"
+        nameLabel.text = "Name: \(person.name)"
+        surnameLabel.text = "Surname: \(person.surname)"
+        phoneNumberLabel.text = "Phone number: \(person.phoneNumber)"
+        emailLabel.text = "Email: \(person.email)"
     }
     
 
