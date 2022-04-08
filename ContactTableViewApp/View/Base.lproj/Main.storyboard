@@ -12,8 +12,8 @@
         <scene sceneID="90p-7h-TU9">
             <objects>
                 <navigationController id="HQe-qn-TCk" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uy4-D0-exd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Uy4-D0-exd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -24,11 +24,11 @@
             </objects>
             <point key="canvasLocation" x="-1339" y="-168"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Contacts-->
         <scene sceneID="qLY-S8-1MU">
             <objects>
                 <tabBarController id="QMo-lN-H5D" customClass="TabBarViewController" customModule="ContactTableViewApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="u3V-6x-4yn"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="u3V-6x-4yn"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XQf-SD-sgF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sotredContacts" id="QLl-Te-RAU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sortedCell" id="QLl-Te-RAU">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QLl-Te-RAU" id="vPl-uA-rtD">
@@ -117,25 +117,25 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-Lx-GRz">
                                 <rect key="frame" x="123" y="346" width="168.5" height="204"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACR-T3-Xh1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACR-T3-Xh1">
                                         <rect key="frame" x="0.0" y="0.0" width="75.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-Vx-ktE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-Vx-ktE">
                                         <rect key="frame" x="0.0" y="58" width="102.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coF-xt-AmV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coF-xt-AmV">
                                         <rect key="frame" x="0.0" y="116" width="168.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5d-27-NEk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5d-27-NEk">
                                         <rect key="frame" x="0.0" y="174" width="64" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
@@ -148,7 +148,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jI0-Lx-GRz" firstAttribute="centerY" secondItem="RIi-qA-4oo" secondAttribute="centerY" id="7VI-VU-TvE"/>
+                            <constraint firstItem="jI0-Lx-GRz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0cW-2Y-em4" secondAttribute="leading" priority="999" constant="15" id="PvA-vx-ZU5"/>
                             <constraint firstItem="jI0-Lx-GRz" firstAttribute="centerX" secondItem="RIi-qA-4oo" secondAttribute="centerX" id="QRP-7n-7Ia"/>
+                            <constraint firstItem="0cW-2Y-em4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jI0-Lx-GRz" secondAttribute="trailing" priority="999" constant="15" id="zGC-3D-VtT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iYR-Nb-84x"/>
