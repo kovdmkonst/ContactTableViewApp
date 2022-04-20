@@ -38,18 +38,6 @@ extension Person {
             personArray.append(person)
         }
         
-        
-        
-//        var customIndex = 0
-//        repeat {
-//            personArray.append(Person(name: randomNames[customIndex],
-//                                      surname: randomSurnames[customIndex],
-//                                      email: randomEmails[customIndex],
-//                                      phoneNumber: randomPhoneNumber[customIndex])
-//            )
-//            customIndex += 1
-//        } while customIndex < randomNames.count
-       
         return personArray
     }
 }

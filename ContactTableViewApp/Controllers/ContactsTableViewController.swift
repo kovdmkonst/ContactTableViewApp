@@ -17,7 +17,6 @@ class ContactsTableViewController: UITableViewController {
         print("\(personArray)")
     }
     
-    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
